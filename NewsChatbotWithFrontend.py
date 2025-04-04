@@ -1,29 +1,3 @@
-# import os
-
-# from groq import Groq
-# from dotenv import load_dotenv
-
-# load_dotenv()
-# query = input("Enter your query: ")
-# text=f"You are a chatbot designed to answer questions specifically related to [News]. Please make sure that your responses are always relevant to [News]. If a user asks a question that is not related to [Finance Expert], kindly respond with: 'I don't know.' "
-# client = Groq(
-#     api_key=os.environ.get("GROQ_API_KEY"),
-# )
-
-# chat_completion = client.chat.completions.create(
-#     messages=[
-#         {
-#             "role": "user",
-#             "content": text,
-#         }
-#     ],
-#     model="llama-3.3-70b-versatile",
-# )
-
-# print(chat_completion.choices[0].message.content)
-
-# frontend part
-
 import streamlit as st
 import os
 from groq import Groq
