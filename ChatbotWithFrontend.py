@@ -47,6 +47,8 @@ st.markdown("""
 
 # Initialize Groq client
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+print("API KEY:", os.environ.get("GROQ_API_KEY"))
+print(client)
 
 # Main title with custom styling
 st.markdown("<h1 style='text-align: center; color: #2c3e50;'>🤖 AI Chat Assistant</h1>", unsafe_allow_html=True)
